@@ -1,0 +1,30 @@
+
+       
+        div {
+            position: relative;
+            font-size: 5rem;
+            text-transform: uppercase;
+            letter-spacing: 5px;
+            line-height: 80px;
+            cursor: pointer;
+        }
+        .text {
+            color: transparent;
+            -webkit-text-stroke: 1px rgba(20, 20, 20, 0.6);
+        }
+        .hover-text {
+            position: absolute;
+            inset: 0;
+            width: 0%;
+            --main-bg-color : rgb(12, 173, 194);
+            color: var(--main-bg-color);
+            overflow: hidden;
+            border-right: 6px solid var(--main-bg-color);
+            transition: 0.5s ease-in-out;
+        }
+        div:hover .hover-text {
+            width: 100%;
+
+            filter: drop-shadow(0 0 40px var(--main-bg-color));
+        }
+   
